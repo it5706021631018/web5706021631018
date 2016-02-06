@@ -1,29 +1,40 @@
 <html>
 <head><title>การสร้างฟอร์มแบบGET</title></head>
-<body>
+<body background ="green-bg.jpg">
+
 <?php
 $n = $_GET['n'];
+$la = $_GET['la'];
 $nick = $_GET['nick'];
 $mail = $_GET['mail'];
 $b = $_GET['b'];
 $sex = $_GET['sex'];
 $a = $_GET['a'];
+$tel = $_GET['tel'];
+$no = $_GET['no'];
 
 echo "<p>";
 echo "<b>ข้อมูลที่ผู้ใช้กรอก </b></br>";
-echo " Name : <i> $n </i> </br>";
-echo " Nick name : <i> $nick </i> </br>";
-echo " Name : <i> $mail </i> </br>";
+echo " Firstname : <i> $n </i> </br>";
+echo " Lastname : <i> $la </i> </br>";
+echo " Nickname : <i> $nick </i> </br>";
+echo " E-mail : <i> $mail </i> ";
+$email = 'zoro@gmail.com';
+if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $mail)){
+
+echo "<font color=red> <i>E-mail is not valid</font></i><br/>";
+
+}else{
+
+echo "<font color=green> <i>E-mail is  valid</font></i><br/>";}
+
 echo " Brithday : <i> $b </i> </br>";
 echo " Sex : <i> $sex </i> </br>";
+echo " Tel : <i> $tel </i> </br>";
+echo " ID Card NO. : <i> $no </i> </br>";
+echo "Age : <i>$a </i> ";
 
-echo "Age : $a <i> </br>";
-if ($a<=60) echo "ปกติ </br>";
-elseif ($a>=61) echo "เกษียณ </br>";
-elseif ($a>=101) echo "error </br>";
 
 ?>
-
-
 </body>
 </html>
