@@ -1,5 +1,7 @@
 <html>
-<head><title>การสร้างฟอร์ม</title></head>
+<head><title>Resume</title>
+<link rel="icon" type="image/gif" href="animated_th_126.gif">
+</head>
 <body background ="green-bg.jpg">
 <style type="text/css">
 body {
@@ -9,11 +11,15 @@ background-repeat: no-repeat; }
 </style>
 
 <form method="get" action="lab5-9cal.php">
-  <table border="1" align="center" width="600"  bgcolor="#7CFC00" bordercolor="	#669900">
+  <table border="4" align="center" width="600"  bgcolor="#7CFC00" bordercolor="	#333300">
     <tr  background= "haedbg.jpg" height ="250">
       <td colspan="2" align="center">
-        <MARQUEE behavior=alternate direction=left scrollAmount=3 width="4%"><font face=Webdings>4</font></MARQUEE><MARQUEE scrollAmount=1 direction=left width="2%">| | |</MARQUEE>แบบฟอร์มประวัติส่วนตัว<MARQUEE scrollAmount=1 direction=right width="2%">| | |</MARQUEE><MARQUEE behavior=alternate direction=right scrollAmount=3 width="4%"><font face=Webdings>3</font></MARQUEE>
-
+      <h1> <font color="#003300"> <MARQUEE behavior=alternate direction=left scrollAmount=3
+        width="4%"><font face=Webdings>4</font></MARQUEE><MARQUEE scrollAmount=1
+        direction=left width="2%">| | |</MARQUEE> Resume <MARQUEE scrollAmount=1 direction=right
+        width="2%">| | |</MARQUEE><MARQUEE behavior=alternate direction=right scrollAmount=3
+        width="4%"><font face=Webdings>3</font></MARQUEE>
+</h1></font>
        </td>
 </tr>
 <tr>
@@ -25,15 +31,13 @@ background-repeat: no-repeat; }
         <td> <input type="text" name="la" size="30" value=""> </td></tr>
 
     <td> Enter Nickname :</td>
-      <td> <input type="text" name="nick" size="10" value=""> </td></tr>
+      <td> <input type="text" name="nick" size="30" value=""> </td></tr>
     <tr>
       <td> Enter E-mail :</td>
-        <td> <input type="text" name="mail" size="50" value=""> </td></tr>
+        <td> <input type="text" name="mail" size="30" value=""> </td></tr>
         <tr>
-          <td> Enter Brithday</td></tr>
-          <tr>  <td>>>Day
-          </td>
-            <td> <select>
+          <td> Enter Brithday</td>
+          <td>Day<select name = d>
               <option>1
                 <option>2
                   <option>3
@@ -67,9 +71,8 @@ background-repeat: no-repeat; }
   <option>30
       <option>31
 
-      </select></td></tr>
-      <tr>
-<td> >>Month</td> <td><select>
+      </select>
+      Month <select name= m>
 <option>มกราคม
   <option>กุมภาพันธ์
     <option>มีนาคม
@@ -82,6 +85,24 @@ background-repeat: no-repeat; }
                   <option>ตุลาคม
                     <option>พฤศจิกายน
                       <option>ธันวาคม
+
+
+</select>
+
+Year <select name ="y">
+  <option>2530
+    <option>2531
+      <option>2532
+        <option>2533
+          <option>2534
+            <option>2535
+              <option>2536
+                <option>2537
+                  <option>2538
+                    <option>2539
+                      <option>2540
+                        <option>2541
+                          <option>2542
 
 
 </select>
@@ -110,8 +131,25 @@ background-repeat: no-repeat; }
     <tr><td> Enter ID Card NO. : </td>
     <td><input type="text" name="no" maxlength="13" value=""></td>
     </tr>
-<tr><td colspan="2" align="center"> <input type="submit" value="  OK "/>
-  <input type="submit" value="  Clear "/> </td>
+
+
+    <tr><td> Select Blood Group : </td>
+      <td>
+    <input type="radio" name="g" value="A">A</br>
+    <input type="radio" name="g" value="B">B</br>
+    <input type="radio" name="g" value="O">O</br>
+    <input type="radio" name="g" value="AB">AB</br>
+      </td>
+    </tr>
+<tr><td>Enter Hobby :</td>
+<td> <textarea name="h" cols="40" row="10"></textarea><br/>
+ </td>
+</tr>
+
+<tr> </tr>
+
+<tr bgcolor="#333300"><td colspan="2" align="center"> <input type="submit" value="  OK "/>
+  <input type="reset" value="  Clear "/> </td>
 </tr>
 
 </table>
