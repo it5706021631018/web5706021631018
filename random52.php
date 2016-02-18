@@ -1,6 +1,6 @@
 <html>
 <head> <title> RANDOM52 </title> </head>
-<body>
+<body background="m55.jpg">
 <?php
 for($a==1;$a<4;$a++){
 $number='1234567890';
