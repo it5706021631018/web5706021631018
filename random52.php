@@ -2,7 +2,11 @@
 <head> <title> RANDOM52 </title> </head>
 <body background="m55.jpg">
 <?php
+echo "<table>"
+
 for($a==1;$a<4;$a++){
+ echo "<tr>"
+ echo "<td>"
 $number='1234567890';
 for($i==1;$i<13;$i++){
 $random=rand(0,strlen($number)-1);
@@ -16,12 +20,9 @@ echo $result."<br/>";
 $result='';
 }
 
+ echo "</tr>"
 
-
-
-
-
-
+echo "</table>"
  ?>
 </body>
 </html>
