@@ -19,8 +19,8 @@ $i=0;
 echo $result."<br/>";
 $result='';
 }
+echo "</tr>;
 
- echo "</tr>"
 
 echo "</table>"
  ?>
