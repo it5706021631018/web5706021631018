@@ -21,7 +21,7 @@ $count_arr=count($cards);
    	foreach ($cards as $cards) { 
 	
 	}
-echo "<table align='center' border='4' width='300'>";
+echo "<table align='center' border='4' width='300' bgcolor='Green'>";
 
 for ($r=1; $r <= $row; $r++){
 echo "<tr>";
